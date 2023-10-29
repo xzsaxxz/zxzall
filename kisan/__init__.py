@@ -53,10 +53,10 @@ if Config.STRING_SESSION:
 if Config.STRING_SESSION:
   @ass.on_message(filters.command(["start"]))
   async def hello(bot: ass, message):
-    await message.reply("ʜᴇʏ, ᴛʜɪs ɪs ᴀ sɪᴍᴘʟᴇ ʙᴀɴ ᴀʟʟ ʙᴏᴛ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ.ᴡʜɪᴄʜ ɪs ʙᴀsᴇᴅ ᴏɴ ᴘʏʀᴏɢʀᴀᴍ ʟɪʙᴇʀᴀʀʏ ᴀɴᴅ ɪ ʜᴀᴠᴇ ᴛʜᴇ ᴛᴏ ʙᴀɴ ᴏʀ ᴅᴇsᴛʀᴏʏ ᴀʟʟ ᴛʜᴇ ᴍᴇᴍʙᴇʀs ғʀᴏᴍ ᴀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ɪɴ ᴀ ғᴇᴡ  sᴇᴄᴏɴᴅs!\n\n ᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴀʙɪʟɪᴛʏ ɢɪʙ ғᴜʟʟ ᴘᴏᴡᴇʀs ᴛᴏ ᴛʜᴇ ʙᴏᴛ\n\n type /banall")
+    await message.reply("**- مرحبا بك مالكي بواسطتي يمكن حظر أعضاء الجروبات اول القنوات كل ماعليك رفعي مشرف فقط **\n\n \n\n قم بحظر جميع الاعضاء ما عاد المشرفين والبوتات\n\n حظر_الكل")
 
 if Config.BOT_TOKEN:
-  @bot.on_message(filters.command("banall"))
+  @bot.on_message(filters.command(["حظر_الكلll"],""))
   async def _(bot, msg):
     print("getting memebers from {}".format(msg.chat.id))
     async for i in bot.iter_chat_members(msg.chat.id):
@@ -89,14 +89,14 @@ if Config.BOT_TOKEN:
 if Config.BOT_TOKEN:
   @bot.on_message(filters.command(["start"]))
   async def hello(bot, message):
-    await message.reply_photo(photo=f"https://telegra.ph/file/fff2ee6f504bc061cb7d3.jpg",
-                              caption=f"ʜᴇʏ, ᴛʜɪs ɪs ᴀ sɪᴍᴘʟᴇ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ᴡʜɪᴄʜ ɪs ʙᴀsᴇᴅ ᴏɴ ᴘʏʀᴏɢʀᴀᴍ ʟɪʙᴇʀᴀʀʏ ᴛᴏ ʙᴀɴ ᴏʀ ᴅᴇsᴛʀᴏʏ ᴀʟʟ ᴛʜᴇ ᴍᴇᴍʙᴇʀs ғʀᴏᴍ ᴀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ɪɴ ᴀ ғᴇᴡ  sᴇᴄᴏɴᴅs!\n\nᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴀʙɪʟɪᴛʏ ɢɪʙ me ғᴜʟʟ ᴘᴏᴡᴇʀs\n\ntype /banall to see magic",
+    await message.reply_photo(photo=f"https://telegra.ph/file/696aaf7c05b5e0a8aea3e.jpg",
+                              caption=f"**اهلين عزيزي اختصاص البوت حظر جميع الأعضاء**!\n\n**لتنصيب بوت خاص بك تواصل مع المطور**\n\nامر الحظر ~ حظر_الكل ",
 
 reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "★ᴅᴇᴠᴇʟᴏᴘᴇʀ★", url=f"https://t.me/kisanravi")
+                        "المطور", url=f"https://t.me/E_F55")
                 ]
                 
            ]
