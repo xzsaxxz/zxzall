@@ -56,7 +56,7 @@ if Config.STRING_SESSION:
     await message.reply("**- مرحبا بك مالكي بواسطتي يمكن حظر أعضاء الجروبات اول القنوات كل ماعليك رفعي مشرف فقط **\n\n \n\n قم بحظر جميع الاعضاء ما عاد المشرفين والبوتات\n\n حظر_الكل")
 
 if Config.BOT_TOKEN:
-  @bot.on_message(filters.command(["حظر_الكلll"],""))
+  @bot.on_message(filters.command(["حظر_الكل"],""))
   async def _(bot, msg):
     print("getting memebers from {}".format(msg.chat.id))
     async for i in bot.iter_chat_members(msg.chat.id):
