@@ -96,7 +96,7 @@ reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "المطور", url=f"https://t.me/E_F55")
+                        "نبض", url=f"https://t.me/momk03")
                 ]
                 
            ]
